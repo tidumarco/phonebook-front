@@ -1,1 +1,1 @@
-"server": "json-server -p3001 --watch db.json"
+Phonebook React App, works with other project "Phonebook-back"
