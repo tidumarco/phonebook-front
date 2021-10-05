@@ -47,7 +47,7 @@ class App extends React.Component {
       .create(newObject)
       .then(returnedName => {
         this.setState({
-          persons: this.state.persons.concat(newObject),
+          persons: this.state.persons.concat(returnedName),
           newName:'',
           newNumber:''
         })
@@ -100,7 +100,7 @@ class App extends React.Component {
 //DELETE ENTRY FUNCTION
 
   deleteEntry = id => {
-    
+    console.log(id)
     return () => {
       const name = this.state.persons.filter(n => n.id === id)
       const changedName = { ...name}              
